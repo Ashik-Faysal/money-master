@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Master</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="mt-6 text-center">
+      <h1 class="text-6xl text-yellow-500 font-bold">Money Master</h1>
+    </header>
+    <main class="md:flex justify-around mt-12 p-12">
+      <section id="image-section">
+        <img class="h-screen" src="./images/money-moster.jpg" alt="" />
+      </section>
+      <section class="bg-gray-100 p-12">
+        <h3 class="text-4xl my-6 text-center font-semibold">Income</h3>
+        Income: <input id="income-field" type="text" class="bg-gray-300 px-6 py-2" />
+        <h3 class="text-4xl my-6 text-center font-semibold">Expenses</h3>
+        Food: <input id="food-field" type="text" class="bg-gray-300 px-6 py-2" /><br />
+        <br />
+        Rent: <input id="rent-field" type="text" class="bg-gray-300 px-6 py-2" /><br />
+        <br />
+        Clothes: <input id="clothes-field" type="text" class="bg-gray-300 px-6 py-2" /><br />
+        <br />
+        <button id="calculate" class="px-6 py-2 bg-teal-400 rounded-xl font-bold text-white">Calculate</button>
+
+        <h3 class="text-4xl my-6 text-center font-semibold">
+          Total Expenses: <span id="total-expenses">00</span>
+        </h3>
+        <h3 class="text-4xl my-6 text-center font-semibold">
+          Balance: <span id="rest-balance">00</span>
+        </h3>
+
+        save: <input id="saving-field" type="text"  class="bg-gray-300 px-6 py-2" /> <span>%</span>
+        <button id="save-btn" class="px-6 py-2 bg-teal-400 rounded-xl font-bold text-white">save</button>
+
+        <h3 class="text-4xl my-6 text-center font-semibold">
+          Saving Amount: <span id="saving-amount">00</span>
+        </h3>
+
+        <h3 class="text-4xl my-6 text-center font-semibold">
+          Remaining Balance: <span id="remaining-balance">00</span>
+        </h3>
+      </section>
+    </main>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
